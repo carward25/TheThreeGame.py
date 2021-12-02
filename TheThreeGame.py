@@ -18,7 +18,7 @@ class TheThreeGame():
         if (pick < 1 or pick > 10):
             print('Error: You can only pick numbers 1 to 9')
             return False
-        elif self.__state == 'DRAW' or self.__state == 'FIRST_WON' or self.__state == 'SECOND_WON':
+        elif self.__state == 'is_it_a_draw' or self.__state == 'FIRST_WON' or self.__state == 'SECOND_WON':
             print('Error: Game is over.')
             return False
         if player == 'first':
@@ -37,7 +37,7 @@ class TheThreeGame():
         elif sum(self.__p2_moves) == 15:
             self.__state = 'SECOND_WON'
         elif len(self.__p1_moves) + len(self.__p2_moves) == 9:
-            self.__state = 'DRAW'
+            self.__state = 'is_it_a_draw'
         return True
 
     def get_current_state(self):
