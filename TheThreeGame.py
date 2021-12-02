@@ -7,7 +7,7 @@
 # player has won, then the game ends in a draw
 
 
-class AddThreeGame():
+class TheThreeGame():
 
     def __init__(self):
         self.__p1_moves = []
