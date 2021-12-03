@@ -11,7 +11,7 @@ class TheThreeGame():
     def __init__(self):
         self.__p1_moves = []
         self.__p2_moves = []
-        self.__game_state False! = 'GAME_UNFINISHED'
+        self.__game_state = 'GAME_UNFINISHED'
 
     def make_move(self, player, num):
         if self.__game_state != 'GAME_UNFINISHED': return False
