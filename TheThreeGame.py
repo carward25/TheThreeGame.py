@@ -47,3 +47,15 @@ class TheThreeGame():
     def is_it_a_draw(self):
         winner = self.get_winner()
         return winner == 'IT_IS_A_DRAW'
+    
+    
+game = TheThreeGame()
+game.make_move("first_player", 2)
+game.make_move("second_player", 5)
+result = game.make_move("first_player", 7)
+player_won = game.get_winner()
+draw = game.is_it_a_draw()
+game.make_move("second_player", 9)
+game.make_move("first_player", 6)
+game.make_move("second_player", 1)
+print(game.get_winner())
