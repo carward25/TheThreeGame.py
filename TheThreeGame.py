@@ -15,7 +15,7 @@ class TheThreeGame():
         self.__current_state = 'GAME_UNFINISHED'
 
     def make_move(self, player, num):
-        if self.__current_state != 'GAME_UNFINISHED': return
+        if self.__current_state != 'GAME_UNFINISHED': return False
         if player == 'first_player':
             if 1 <= num <= 9 and num not in self.__p1_numbers and num not in self.__p2_numbers:
                 self.__p1_numbers.append(num)
