@@ -47,5 +47,3 @@ class TheThreeGame():
     def is_it_a_draw(self):
         winner = self.get_winner()
         return winner == 'IT_IS_A_DRAW'
-    
-    
